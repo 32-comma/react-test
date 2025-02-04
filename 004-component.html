@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reactjs-cdn hello, world!</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        function Header() {
+            return (
+                <div>
+                    <header>
+                        <h1><a href="/">WEB</a></h1>
+                    </header>
+                </div>
+            )
+        }
+        function Nav() {
+            return (
+                <nav>
+                    <ol>
+                        <li><a href="/read/1">html</a></li>
+                        <li><a href="/read/2">js</a></li>
+                        <li><a href="/read/3">css</a></li>
+                    </ol>
+                </nav>
+            )
+        }
+        function Article() {
+            return (
+                <article>
+                    <h2>Welcome</h2>
+                    <div>Hello, WEB</div>
+                </article>
+            )
+        }
+        function App() {
+            return (
+                <div>
+                    <Header />
+                    <Nav />
+                    <Article />
+                </div>
+            )
+        }
+        const root = document.getElementById('root');
+        ReactDOM.render(<App />, root);
+    </script>
+</body>
+
+</html>
